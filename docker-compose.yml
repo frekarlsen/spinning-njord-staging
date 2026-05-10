@@ -10,9 +10,9 @@ services:
     ports:
       - "3457:80"
     depends_on:
-      - spinning-api
+      - spinning-staging-api
     networks:
-      - spinning-net
+      - spinning-staging-net
 
   spinning-api:
     build: ./backend
