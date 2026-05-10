@@ -32,7 +32,7 @@ async function sendNotifications(data,title,msg,tags){
   notifyNtfy(data.ntfyTopic,title,msg.replace(/\*\*/g,""),tags);
 }
 
-const NJORD_QUOTES=["Svetten er bare fettet som gråter 😭","Ingen har angret på en treningsøkt... bortsett fra kanskje denne 🥴","Beina sier nei, men hjertet sier kanskje","Vi sykler ikke fort, men vi sykler!","Det er ikke farten som dreper, det er bakkene 🏔️","Sykkelshortsen lyver aldri 🩳","Husk: siste bakke er alltid den verste","Kardio? Mer som hjarte-dio 💓"];
+const NJORD_QUOTES=["Svetten er bare fettet som gråter 😭","Vi sykler ikke fort, men vi sykler 🚴","Sykkelshortsen lyver aldri 🩳"];
 
 const T={bg:"linear-gradient(180deg,#FFF7ED 0%,#FEF3C7 50%,#FFF7ED 100%)",card:"border-gray-200 hover:border-orange-300 hover:shadow-md",accent:"bg-orange-500 hover:bg-orange-600",accentWait:"bg-amber-500 hover:bg-amber-600",signedUp:"text-green-600 bg-green-50",waitlisted:"text-amber-600 bg-amber-50",cancelled:"bg-red-50 text-red-400",bGray:"bg-gray-100 text-gray-500",bBlue:"bg-blue-50 text-blue-600",bRed:"bg-red-50 text-red-500",bYellow:"bg-amber-50 text-amber-600",input:"border-gray-200 focus:border-orange-400 focus:ring-orange-100",btnP:"bg-orange-500 hover:bg-orange-600 text-white",btnG:"text-gray-500 hover:text-gray-800 hover:bg-gray-100",adminB:"border-orange-200",pLow:"#3B82F6",pMid:"#F59E0B",pFull:"#EF4444",weekBg:"bg-white border-gray-100",addBtn:"border-orange-300 text-orange-400 hover:text-orange-600 hover:border-orange-400 hover:bg-orange-50"};
 
