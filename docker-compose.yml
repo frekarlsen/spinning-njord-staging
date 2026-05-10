@@ -5,10 +5,10 @@ services:
       context: ./frontend
       args:
         VITE_API_KEY: ${API_KEY:-njord-secret-change-me}
-    container_name: spinning-web
+    container_name: spinning-staging-web
     restart: unless-stopped
     ports:
-      - "3456:80"
+      - "3457:80"
     depends_on:
       - spinning-api
     networks:
@@ -16,19 +16,19 @@ services:
 
   spinning-api:
     build: ./backend
-    container_name: spinning-api
+    container_name: spinning-staging-api
     restart: unless-stopped
     environment:
       - API_KEY=${API_KEY:-njord-secret-change-me}
       - PORT=4000
       - DATA_DIR=/app/data
     volumes:
-      - spinning-data:/app/data
+      - spinning-staging-data:/app/data
     networks:
-      - spinning-net
+      - spinning-staging-net
 
 volumes:
-  spinning-data:
+  spinning-staging-data:
 
 networks:
-  spinning-net:
+  spinning-staging-net:
