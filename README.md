@@ -21,14 +21,14 @@ Påmeldingssystem for spinning-økter på Njord A-plattformen.
 ## Kom i gang
 
 ```bash
-git clone https://github.com/frekarlsen/spinning-njord.git
-cd spinning-njord
+git clone https://github.com/frekarlsen/spinning-njord-staging.git
+cd spinning-njord-staging
 cp .env.example .env
 # Rediger .env med din egen API_KEY
 docker compose up -d --build
 ```
 
-Appen kjører på `http://din-ip:3456`
+Appen kjører på `http://din-ip:3457`
 
 ## Oppdatering
 
@@ -42,7 +42,7 @@ docker compose up -d --build
 
 ```bash
 curl -H "x-api-key: DIN_API_NØKKEL" \
-     http://localhost:3456/api/backup \
+     http://localhost:3457/api/backup \
      -o backup-$(date +%Y%m%d).json
 ```
 
