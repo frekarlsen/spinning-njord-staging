@@ -10,7 +10,7 @@ services:
     ports:
       - "3457:80"
     depends_on:
-      - spinning-staging-api
+      - spinning-api
     networks:
       - spinning-staging-net
 
