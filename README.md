@@ -1,4 +1,4 @@
-# 🚴 Spinning Njord A
+# 🚴 Spinning Njord A ##BETA##
 
 Påmeldingssystem for spinning-økter på Njord A-plattformen.
 
